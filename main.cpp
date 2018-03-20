@@ -1449,8 +1449,8 @@ if((strstr(argv[1], ".rap")) || (strstr(argv[1], ".RAP")))
 		{
 			printf("\nverify your files!");
 		}
-		getchar();
-		getchar();
+		//getchar();
+		//getchar();
 		return 0;
 	}
 	else if((strstr(argv[1], ".EDAT")) || (strstr(argv[1], ".edat")))
@@ -1524,8 +1524,8 @@ if((strstr(argv[1], ".rap")) || (strstr(argv[1], ".RAP")))
 				fclose(fp);
 			}
 		}
-		getchar();
-        getchar();
+	//	getchar();
+       // getchar();
 		return 0;
 	}
 	else if((strstr(argv[1], ".pkg")) || (strstr(argv[1], ".PKG")))
@@ -1537,7 +1537,7 @@ if((strstr(argv[1], ".rap")) || (strstr(argv[1], ".RAP")))
 		if(stat(argv[1], &stat1)!=0)
 		{
 			printf("cant open file!\n");
-			getchar();
+		//	getchar();
 			return -1;
 		}
 		uint64_t len=stat1.st_size;
@@ -1728,8 +1728,8 @@ if((strstr(argv[1], ".rap")) || (strstr(argv[1], ".RAP")))
 		close(fd_out);
 		chmod(out_path, 0777);
 		printf("pkg signed!\n");
-		getchar();
-		getchar();
+		//getchar();
+		//getchar();
 		return 0;
 	}
 	else if(strstr(argv[1], ".ENC"))
@@ -1748,8 +1748,8 @@ if((strstr(argv[1], ".rap")) || (strstr(argv[1], ".RAP")))
 			printf("config resigned!\n");
 			fclose(fp);
 		}
-		getchar();
-		getchar();
+		//getchar();
+		//getchar();
 	}
 	
 done:
